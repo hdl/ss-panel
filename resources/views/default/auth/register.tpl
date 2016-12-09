@@ -9,11 +9,6 @@
         <p class="login-box-msg">注册，然后变成一只猫。</p>
 
         <div class="form-group has-feedback">
-            <input type="text" id="name" class="form-control" placeholder="昵称"/>
-            <span class="glyphicon glyphicon-user form-control-feedback"></span>
-        </div>
-
-        <div class="form-group has-feedback">
             <input type="text" id="email" class="form-control" placeholder="邮箱"/>
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
         </div>
@@ -37,11 +32,6 @@
         <div class="form-group has-feedback">
             <input type="password" id="repasswd" class="form-control" placeholder="重复密码"/>
             <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
-        </div>
-
-        <div class="form-group has-feedback">
-            <input type="text" id="code" value="{$code}" class="form-control" placeholder="邀请码"/>
-            <span class="glyphicon glyphicon-send form-control-feedback"></span>
         </div>
 
         <div class="form-group has-feedback">

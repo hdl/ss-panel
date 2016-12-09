@@ -90,22 +90,22 @@ class AuthController extends BaseController
 
     public function registerHandle($request, $response, $args)
     {
-        $name = $request->getParam('name');
+        $name = $request->getParam('email');
         $email = $request->getParam('email');
         $email = strtolower($email);
         $passwd = $request->getParam('passwd');
         $repasswd = $request->getParam('repasswd');
-        $code = $request->getParam('code');
-        $verifycode = $request->getParam('verifycode');
+        #$code = $request->getParam('code');
+        #$verifycode = $request->getParam('verifycode');
 
         // check code
-        $c = InviteCode::where('code', $code)->first();
-        if ($c == null) {
-            $res['ret'] = 0;
-            $res['error_code'] = self::WrongCode;
-            $res['msg'] = "邀请码无效";
-            return $this->echoJson($response, $res);
-        }
+        #$c = InviteCode::where('code', $code)->first();
+        #if ($c == null) {
+        #    $res['ret'] = 0;
+        #    $res['error_code'] = self::WrongCode;
+        #    $res['msg'] = "邀请码无效";
+        #    return $this->echoJson($response, $res);
+        #}
 
         // check email format
         if (!Check::isEmailLegal($email)) {
