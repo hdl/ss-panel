@@ -53,6 +53,7 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                         <textarea class="form-control" rows="6">{$json_show}</textarea>
+                        <input id="ss-qr-text" class="form-control" value="{$ssqr}">
                     </br>
                         <div class="text-center">
                             <div id="ss-qr"></div>
@@ -91,11 +92,13 @@
         <script src=" /assets/public/js/jquery.qrcode.min.js "></script>
         <script>
             var text_qrcode = jQuery('#ss-qr-text').val();
+            console.log(text_qrcode);
             jQuery('#ss-qr').qrcode({
                 "text": text_qrcode
             });
 
             var text_qrcode = jQuery('#ss-qr-url-text').val();
+            console.log(text_qrcode);
             jQuery('#ss-qr-url').qrcode({
                 "text": text_qrcode
             });
