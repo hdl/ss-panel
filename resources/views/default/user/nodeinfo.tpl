@@ -11,52 +11,16 @@
     <section class="content">
         <!-- START PROGRESS BARS -->
         <div class="row">
-            <div class="col-md-12">
-                <div class="callout callout-warning">
-                    <h4>注意!</h4>
-
-                    <p>配置文件以及二维码请勿泄露！</p>
-                </div>
-            </div>
             <div class="col-md-6">
                 <div class="box box-solid">
                     <div class="box-header">
                         <i class="fa fa-code"></i>
 
-                        <h3 class="box-title">配置Json</h3>
+                        <h3 class="box-title">1. 服务器连接</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
                         <textarea class="form-control" rows="6">{$json_show}</textarea>
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.box -->
-                <div class="box box-solid">
-                    <div class="box-header">
-                        <i class="fa fa-code"></i>
-
-                        <h3 class="box-title">配置地址</h3>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        <input id="ss-qr-text" class="form-control" value="{$ssqr}">
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.col (right) -->
-
-            <div class="col-md-6">
-                <div class="box box-solid">
-                    <div class="box-header">
-                        <i class="fa fa-qrcode"></i>
-
-                        <h3 class="box-title">配置二维码</h3>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
                         <div class="text-center">
                             <div id="ss-qr"></div>
                         </div>
@@ -64,8 +28,25 @@
                     <!-- /.box-body -->
                 </div>
                 <!-- /.box -->
+                <div class="box box-solid">
+                    <div class="box-header">
+                        <i class="fa fa-code"></i>
+
+                        <h3 class="box-title">2. 路由规则</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <input id="ss-url-qr-text" class="form-control" value="http://www.abclite.cn/Abclite.conf">
+                        <div class="text-center">
+                            <div id="ss-qr-url"></div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
             </div>
             <!-- /.col (right) -->
+
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -73,45 +54,27 @@
                     <div class="box-header">
                         <i class="fa fa-qrcode"></i>
 
-                        <h3 class="box-title">Surge配置</h3>
+                        <h3 class="box-title">ShadowRocket配置</h3>
                     </div>
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-4">
-                                <h4>Surge使用步骤</h4>
+                                <h4>ShadowRocket配置步骤</h4>
 
-                                <p>基础配置只需要做一次：
+                                <p>1. 添加服务器信息：
                                 <ol>
-                                    <li>打开 Surge ，点击右上角“Edit”，点击“Download Configuration from URL”</li>
-                                    <li>输入基础配置的地址（或扫描二维码得到地址，复制后粘贴进来），点击“OK”</li>
-                                    <li><b>注意：</b>基础配置不要改名，不可以直接启用。</li>
+                                    <li>打开 ShadowRocket ，在Home Tab下(初始界面)<li>
+                                    <li>点击左上角“[]”，相机扫描服务器二维码</li>
                                 </ol>
                                 </p>
-                                <p>代理配置需要根据不同的节点进行添加：
+                                <p>2. 添加路由
                                 <ol>
-                                    <li>点击“New Empty Configuration”</li>
-                                    <li>在“NAME”里面输入一个配置文件的名称</li>
-                                    <li>点击下方“Edit in Text Mode”</li>
-                                    <li>输入代理配置的全部文字（或扫描二维码得到配置，复制后粘贴进来），点击“OK”</li>
-                                    <li>直接启用代理配置即可科学上网。</li>
+                                    <li>在ShadowRocket， 进入Config Tab</li>
+                                    <li>同样点击左上角“[]”，相机扫描服务器二维码</li>
+                                    <li>Remote File部分多出一个选择，点击，选择 "Use Config"</li>
                                 </ol>
+                                <p>回到Home，点击Connect 即可自由上网
                                 </p>
-                            </div>
-                            <div class="col-md-4">
-                                <h4>基础配置</h4>
-
-                                <div class="text-center">
-                                    <div id="surge-base-qr"></div>
-                                </div>
-                                <textarea id="surge-base-text" class="form-control" rows="6">{$surge_base}</textarea>
-                            </div>
-                            <div class="col-md-4">
-                                <h4>代理配置</h4>
-
-                                <div class="text-center">
-                                    <div id="surge-proxy-qr"></div>
-                                </div>
-                                <textarea id="surge-proxy-text" class="form-control" rows="6">{$surge_proxy}</textarea>
                             </div>
                         </div>
                     </div>
@@ -126,14 +89,12 @@
             jQuery('#ss-qr').qrcode({
                 "text": text_qrcode
             });
-            var text_surge_base = jQuery('#surge-base-text').val();
-            jQuery('#surge-base-qr').qrcode({
-                "text": text_surge_base
+
+            var text_qrcode = jQuery('#ss-qr-url-text').val();
+            jQuery('#ss-qr-url').qrcode({
+                "text": text_qrcode
             });
-            var text_surge_proxy = jQuery('#surge-proxy-text').text();
-            jQuery('#surge-proxy-qr').qrcode({
-                "text": text_surge_proxy
-            });
+
         </script>
     </section>
     <!-- /.content -->
