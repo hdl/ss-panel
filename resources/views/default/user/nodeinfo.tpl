@@ -14,14 +14,12 @@
                 <div class="box box-solid">
                     <div class="box-header">
                         <i class="fa fa-qrcode"></i>
-
-                        <h3 class="box-title">ShadowRocket配置</h3>
+                        <h3 class="box-title">ShadowRocket配置步骤</h3>
                     </div>
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-8">
-                                <h4>ShadowRocket配置步骤</h4>
-
+                                <p>0. 下载iOS app: <a href="https://itunes.apple.com/us/app/shadowrocket/id932747118">ShadowRocket</a>
                                 <p>1. 添加服务器信息：
                                 <ol>
                                     <li>打开 ShadowRocket ，在Home Tab下(初始界面)</li>
@@ -55,6 +53,7 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                         <textarea class="form-control" rows="6">{$json_show}</textarea>
+                    </br>
                         <div class="text-center">
                             <div id="ss-qr"></div>
                         </div>
@@ -74,6 +73,7 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                         <input id="ss-url-qr-text" class="form-control" value="http://www.abclite.cn/Abclite.conf">
+                        </br>
                         <div class="text-center">
                             <div id="ss-qr-url"></div>
                         </div>
