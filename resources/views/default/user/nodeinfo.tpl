@@ -73,7 +73,7 @@
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
-                        <input id="ss-url-qr-text" class="form-control" value="http://www.abclite.cn/Abclite.conf">
+                        <input id="ss-qr-url-text" class="form-control" value="http://www.abclite.cn/Abclite.conf">
                         </br>
                         <div class="text-center">
                             <div id="ss-qr-url"></div>
