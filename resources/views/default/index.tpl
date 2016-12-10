@@ -33,7 +33,7 @@
                     -->
                     <h2 class="center light-blue-text"><i class="material-icons">&#xE3E7</i></h2>
                     <h5 class="center">便捷</h5>
-                        移动网络/Wifi 无缝切换，后台常驻，傻瓜操作。对FB，Youtube，Instagram以及edu学校网站进行专项优化，留学回国不掉线。
+                        支持移动网络/Wifi 无缝切换，后台常驻。对FB，Youtube，Instagram以及edu学校网站进行专项优化，留学回国不掉线。
                     <p class="light">
 
                     </p>
@@ -47,7 +47,7 @@
                     -->
                     <h2 class="center light-blue-text"><i class="material-icons">&#xE8B8</i></h2>
                     <h5 class="center">智能</h5>
-                        只针对需要翻墙的网球进行VPN代理，国内网站不受任何影响。 24小时客服微信在线，时刻解决问题。
+                        只针对需要翻墙的网球进行VPN代理，国内网站不受任何影响，无需来回切换。
                     <p class="light">
 
                     </p>
@@ -61,7 +61,7 @@
                     -->
                     <h2 class="center light-blue-text"><i class="material-icons">&#xE7EF</i></h2>
                     <h5 class="center">Good Deal</h5>
-                        $20/$10覆盖整个寒假, 即日起至2016-02-15到期。支持Paypal/国外信用卡支付。
+                        $20/$10覆盖整个寒假, 即日起至2016-02-15到期。支持Paypal/国外信用卡支付。客服微信在线，时刻解决问题。
                     <p class="light">
 
                     </p>
