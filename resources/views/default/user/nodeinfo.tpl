@@ -29,7 +29,7 @@
                                 <p>2. 添加路由
                                 <ol>
                                     <li>在ShadowRocket， 进入Config Tab</li>
-                                    <li>同样点击左上角“[]”，相机扫描服务器二维码</li>
+                                    <li>同样点击左上角“[]”，相机扫描规格二维码</li>
                                     <li>Remote File部分多出一个选择，点击，选择 "Use Config"</li>
                                 </ol>
                                 <p>回到Home，点击Connect 即可自由上网
@@ -48,7 +48,7 @@
                     <div class="box-header">
                         <i class="fa fa-code"></i>
 
-                        <h3 class="box-title">1. 服务器连接</h3>
+                        <h3 class="box-title">1. 服务器二维码</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
@@ -68,7 +68,7 @@
                     <div class="box-header">
                         <i class="fa fa-code"></i>
 
-                        <h3 class="box-title">2. 路由规则</h3>
+                        <h3 class="box-title">2. 规则二维码</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
